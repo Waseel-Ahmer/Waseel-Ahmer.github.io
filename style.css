@@ -46,6 +46,9 @@ ul{
 #highlights{
     color: var(--special);
 }
+a{
+    color: rgb(133, 201, 23);
+}
 a:hover{
     color: greenyellow;
 }
