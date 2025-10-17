@@ -1,0 +1,45 @@
+:root{
+    --special: rgb(56, 194, 56);
+    --other: white;
+}
+html{
+    background-color: black;
+}
+legend{
+    font-size: 32px;
+    color: var(--special);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+fieldset{
+    border-color: var(--special);
+}
+label{
+    color: var(--other);
+}
+input{
+   color: var(--special);
+}
+option{
+    color: black;
+}
+textarea::placeholder{
+    color: var(--special);
+}
+p{
+    color: var(--other);
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-style: italic;
+}
+input{
+    color: black;
+}
+input[type*="submit"]{
+    color: black;
+    background-color: var(--special);
+}
+input[type*="reset"]{
+    color: black;
+    background-color: var(--special);
+}

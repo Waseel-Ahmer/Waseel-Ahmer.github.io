@@ -1,0 +1,92 @@
+:root{
+    --special: rgb(56, 194, 56);
+}
+img{
+    box-sizing: border-box;
+    width:20%;
+    min-width: 200px;
+    max-width: 800px;
+    border-style: solid;
+    border-color: var(--special);
+    border-radius: 10px;
+    border-width: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(114, 114, 114);
+}
+html{
+    background-color: black;
+}
+h1{
+    color: var(--special);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 0px 20px;
+    font-style: italic;
+}
+ul{
+    color: var(--special);
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-style: italic;
+     border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0px 20px;
+     background-color: rgb(59, 59, 59);
+    height : 100px;
+    width: 200px;
+    overflow: auto;
+}
+#highlights{
+    color: var(--special);
+}
+a{
+    color: rgb(133, 201, 23);
+}
+a:hover{
+    color: greenyellow;
+}
+a:visited{
+    color: rgb(46, 160, 71);
+}
+a:active{
+    color: grey;
+}
+a[href^="mailto:"]{
+    color: var(--special);
+}
+a[href^="tel:"]{
+    color: var(--special);
+}
+table{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+     font-style: italic;
+     border: solid 1pt white;
+border-collapse: collapse;
+}
+thead tr {
+background-color:var(--special);
+color: black;
+}
+th {
+padding: 3px;
+}
+td {
+border: solid 1pt white;
+padding: 10pt;
+}
+tbody tr:hover {
+background-color: var(--special);
+color: black;
+font-style: italic;
+}
+caption {
+    color: var(--special);
+}

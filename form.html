@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collaboration Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form method="get" action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label>First Name: </label>
+                <input type="text" name="fname" />
+            </p>
+             <p>
+                <label>Last Name: </label>
+                <input type="text" name="lname" />
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="email" name="email" />
+            </p>
+            <p>
+                <label>Contact Number: </label>
+                <input type="tel" name="contactnum" />
+            </p>
+            <p>
+                <label>Country: </label>
+                <select name="location">
+                    <option>Pakistan</option>
+                    <option>USA</option>
+                    <option>Germany</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>Denmark</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Qualification</legend>
+            <p>
+                <label>Recent Qualification: </label>
+                 <select name="degree">
+                    <option>Bachelors</option>
+                    <option>Diploma</option>
+                    <option>Masters</option>
+                    <option>M.Phil</option>
+                    <option>PhD</option>
+                </select>
+            </p>
+            <p>
+                <label>Institue Name: </label>
+                <input type="text" name="institute" />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Professional Details</legend>
+            <p>
+                <label>LinkedIn URL: </label>
+                <input type="url" name="linkedin" />
+            </p>
+            <p>
+               <label>Brief Description of your Game Projects: </label>
+               <br>
+               <textarea placeholder="Enter description here..."></textarea>
+            </p>
+            <p> 
+                <form method="post" enctype="multipart/form-data">
+                    <label>Upload your CV: </label>
+                    <br>
+                    <input type="file" name="cv" />
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Details</legend>
+                <p>
+                    <label>For which role you want to apply?</label>
+                    <br>
+                    <input type="checkbox" name="position" value="gp">Game Programmer
+                    <br>
+                    <input type="checkbox" name="position" value="gd">Game Designer
+                    <br>
+                    <input type="checkbox" name="position" value="ga">Game Artist
+                    <br>
+                    <input type="checkbox" name="position" value="ld">Level Designer
+                    <br>
+                    <input type="checkbox" name="position" value="gt">Game Tester
+                </p>
+                <p>
+                    <label>Why you want to join our team?</label>
+                    <br>
+                    <textarea placeholder="Enter description here..."></textarea>
+                </p>
+                <p>
+                    <label>How would you rate your Unreal Engine knowledge?</label>
+                    <br>
+                    Amateur
+                    <input type="range" min="0" max="10" step="1" name="ueskill" />
+                    Pro
+                </p>
+                 <p>
+                    <label>How would you rate your Unity Engine knowledge?</label>
+                    <br>
+                    Amateur
+                    <input type="range" min="0" max="10" step="1" name="unityskill" />
+                    Pro
+                </p>
+            </fieldset>
+            <label>Info. provided is authentic and correct to the best of my knowledge.</label>
+            <input type="checkbox" name="check" >
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit" value="Submit" >
+
+    </form>
+</body>
+</html>
