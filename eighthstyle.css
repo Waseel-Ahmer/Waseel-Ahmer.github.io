@@ -1,0 +1,215 @@
+:root{
+    --special: rgb(56, 194, 56);
+}
+#profilepic{
+    box-sizing: border-box;
+    width:20%;
+    min-width: 300px;
+    max-width: 1200px;
+    border-style: solid;
+    border-color: var(--special);
+    border-radius: 10px;
+    border-width: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(114, 114, 114);
+}
+html{
+    background-color: black;
+}
+h1{
+    color: var(--special);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    text-align: center;
+}
+h2{
+    color: var(--special);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 0px 20px;
+    font-style: italic;
+    
+}
+ul{
+    color: var(--special);
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-style: italic;
+     border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0px 20px;
+     background-color: rgb(59, 59, 59);
+    height : 100px;
+    width: 200px;
+    overflow: auto;
+}
+#highlights{
+    color: var(--special);
+}
+a{
+    color: rgb(133, 201, 23);
+}
+a:hover{
+    color: greenyellow;
+}
+a:visited{
+    color: rgb(46, 160, 71);
+}
+a:active{
+    color: grey;
+}
+a[href^="mailto:"]{
+    color: var(--special);
+}
+a[href^="tel:"]{
+    color: var(--special);
+}
+table{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+     font-style: italic;
+     border: solid 1pt white;
+border-collapse: collapse;
+width: 100%;
+}
+thead tr {
+background-color:var(--special);
+color: black;
+}
+th {
+padding: 3px;
+}
+td {
+border: solid 1pt white;
+padding: 10pt;
+}
+tbody tr:hover {
+background-color: var(--special);
+color: black;
+font-style: italic;
+}
+caption {
+    color: var(--special);
+}
+
+#ad{
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    min-width: 50px;
+    max-width: 150px;
+    border-style: solid;
+    border-color: var(--special);
+    border-radius: 5px;
+    z-index: 100; 
+    
+}
+#navigation{
+    color: white;
+    text-decoration: none;
+    
+}
+
+ol{
+     background-color:var(--special);
+      color: var(--special);
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    padding: 10px
+}
+nav {
+   position: sticky;
+    top: 0px;
+    z-index: 100;     
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    border-style: solid;
+    border-color: var(--special);
+    border-radius: 40px;
+    border-width: 3px;
+    padding: 10px;
+}
+#logo{
+    position:relative;
+    left:100px;
+    top:10px;
+    max-height: 80px;
+    max-width: 80px;
+    border-style: solid;
+    border-color: var(--special);
+    border-radius: 50px;
+    border-width: 2px;
+}
+#naming{
+    position: relative;
+    left: 35px;
+}
+#cardlist{
+    color: white;
+    background-color: black;
+}
+.firstcontainer{
+    display: grid;
+    grid-template-columns: .7fr 2fr 0fr;
+}
+.firstcontainer1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.firstcontainer2{
+    grid-row:1;
+    grid-column:2;
+}
+.firstcontainer2a{
+    grid-row:1;
+    grid-column:2;
+    margin-top: 10%;
+}
+.secondcontainer{
+    display: grid;
+    grid-template-columns: 1.5 1.5fr 1fr 0fr;
+}
+.secondcontainer1{
+    grid-row: 1;
+    grid-column: 1;
+}
+.secondcontainer1a{
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 10%;
+}
+.secondcontainer2{
+    grid-row: 1;
+    grid-column: 2;
+}
+.secondcontainer2a{
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 10%;
+}
+
+#emphasize{
+    background-color: rgb(70, 69, 69);
+}
+@media only screen and (max-width:480px)
+{
+#profilepic{ min-width: 40%; }
+.card{
+    border-style: solid;
+    border-color: var(--special);
+    border-radius: 40px;
+    border-width: 3px;
+    padding: 10px;
+}
+}
