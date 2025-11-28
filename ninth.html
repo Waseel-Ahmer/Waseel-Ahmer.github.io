@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="ninthstyle.css">
+</head>
+<body>
+    <img src="pic1.png" alt="Pre-loaded" title="non lazy load">
+    <img data-src="pic2.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic3.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic4.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic5.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic6.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic7.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic8.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic9.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <img data-src="pic10.png" data-alt="Lazy Loaded" title="lazy load" class="lazy">
+    <script>
+        function lazyload(){
+            let lazypics=document.querySelectorAll('img.lazy');
+            for(pic of lazypics){
+                if(pic.offsetTop<(window.innerHeight+window.pageYOffset)){
+                    pic.src=pic.dataset.src;
+                    pic.alt=pic.dataset.alt;
+                    pic.classList.remove('lazy');
+                }
+            }
+        }
+        window.addEventListener('scroll',lazyload);
+    </script>
+
+
+    </body>
+</html>

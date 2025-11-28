@@ -116,5 +116,66 @@
             <input type="submit" value="Submit" >
 
     </form>
+    <script>
+    function setBackground1(e){
+        let re=/^[^0-9]+$/;
+        if(re.test(e.target.value)==false){
+            e.target.style.backgroundColor="red";
+        }
+        else{
+            e.target.style.backgroundColor="white";
+        }
+
+    }
+    function setBackground2(e){
+        let re=/@gmail.com$/;
+        if(re.test(e.target.value)==false){
+            e.target.style.backgroundColor="red";
+        }
+        else{
+            e.target.style.backgroundColor="white";
+        }
+    }
+    function setBackground3(e){
+        let re=/\d{4}\-?\d{7}/;
+        if(re.test(e.target.value)==false){
+            e.target.style.backgroundColor="red";
+        }
+        else{
+            e.target.style.backgroundColor="white";
+        }
+    }
+    function setBackground4(e){
+        let re=/^(www.linkedin.com|linkedin.com)/;
+        if(re.test(e.target.value)==false){
+            e.target.style.backgroundColor="red";
+        }
+        else{
+            e.target.style.backgroundColor="white";
+        }
+    }
+        window.addEventListener("load", function() {
+        let nameSelector="input[type=text]"
+        let Name=document.querySelectorAll(nameSelector);
+        for(f of Name){
+            f.addEventListener("change", setBackground1);
+        }
+         let mailSelector="input[type=email]"
+        let Mail=document.querySelectorAll(mailSelector);
+        for(f of Mail){
+            f.addEventListener("change", setBackground2);
+        }
+         let telSelector="input[type=tel]"
+        let Tel=document.querySelectorAll(telSelector);
+        for(f of Tel){
+            f.addEventListener("change", setBackground3);
+        }
+         let urlSelector="input[type=url]"
+        let Url=document.querySelectorAll(urlSelector);
+        for(f of Url){
+            f.addEventListener("change", setBackground4);
+        }
+});
+    </script>
 </body>
 </html>
